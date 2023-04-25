@@ -1,7 +1,9 @@
 const date= new Date()
 document.getElementById("year").innerText =  date.getFullYear()
 
+const nlastModified = document.lastModified
 
+document.getElementById("last-modified").innerHTML = `Last Modified : ${nlastModified}`
 // const ipaddress =() =>
 // {
 //     let ipAddress;
