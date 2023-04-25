@@ -111,6 +111,7 @@ main #weather-box{
     width: 100%;
     text-align: center;
     box-shadow:2px 2px 2px 2px black ;
+    padding: 20px;
 
 }
 
