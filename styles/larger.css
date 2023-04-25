@@ -1,0 +1,138 @@
+@media (min-width: 768px) {
+    /* CSS rules go here */
+  
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+
+:root{
+    --primary-color: #2A0750;
+    --secondary-color: #430B7F;
+    --link-color: #c7c3ff;
+}
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: aliceblue;
+}
+
+body {
+    margin: 20%;
+}
+
+#name{
+    justify-content: space-around;
+
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    background-color: #c7c3ff;
+    padding: 20px;
+    align-items: center;
+}
+
+#name img{
+    width: 150px;
+    height: auto;
+    
+}
+
+#name h1{
+    
+    background-color: #c7c3ff;
+}
+
+
+nav {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: var(--primary-color);
+    opacity: 0.6;
+    
+}
+
+nav a {
+    color:var(--link-color);
+    text-decoration: none;
+    background-color: var(--primary-color);
+    padding: 10px;
+
+}
+nav a:hover{
+    background-color: var(--secondary-color);
+}
+
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 2fr 1fr ;
+    grid-template-rows: 1fr 4fr;
+    align-items: center;
+    gap:10px 10px;
+    
+
+}
+
+main h2{
+    grid-row: 1/2;
+    grid-column: 1/5;
+    text-align: center;
+    
+}
+
+main #learning{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    border: 1px solid var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+    background-color: var(--link-color);
+    text-align: center;
+    box-shadow:2px 2px 2px 2px black ;
+
+    
+
+}
+
+main #weather-box{
+    display: flex;
+    flex-direction: column;
+    grid-row: 2/3;
+    grid-column: 4/5;
+    background-color: var(--link-color);
+    border: 1px solid var(--primary-color);
+    height: 200px;
+    width: 250px;
+    text-align: center;
+    box-shadow:2px 2px 2px 2px black ;
+
+}
+
+.card h3, .card div, .card ul li, .card ul {
+    background-color: var(--link-color);
+}
+
+
+
+footer{
+    background-color: var(--primary-color);
+    justify-content: space-around;
+    color:var(--link-color);
+    text-align: center;
+    padding: 10px;
+    
+}
+footer p{
+    background-color: var(--primary-color);
+}
+
+footer span{
+    background-color:var(--primary-color);
+}
+}
