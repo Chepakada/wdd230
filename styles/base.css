@@ -25,7 +25,7 @@ body {
     display: flex;
     
     background-color: #c7c3ff;
-    padding: 20px;
+    /* padding: 10px; */
     align-items: center;
     width: 100%;
 }
@@ -51,7 +51,7 @@ nav {
     align-items: center;
    
     
-    padding: 20px;
+    /* padding: 10px; */
     background-color: var(--primary-color);
     opacity: 0.6;
     

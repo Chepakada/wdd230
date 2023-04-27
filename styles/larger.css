@@ -1,8 +1,6 @@
 @media (min-width: 768px) {
-    /* CSS rules go here */
-  
+    
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
-
 
 :root{
     --primary-color: #2A0750;
@@ -119,8 +117,6 @@ main #weather-box{
 .card h3, .card div, .card ul li, .card ul {
     background-color: var(--link-color);
 }
-
-
 
 footer{
     background-color: var(--primary-color);
