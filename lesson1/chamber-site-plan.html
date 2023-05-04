@@ -8,18 +8,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=Kalam:wght@300&family=Prompt&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles/site-plan.css">
     <title>Document</title>
 </head>
 
 <body>
     <header>
-        <nav></nav>
+        <div id="name">
+            <!-- <img src="./images/my_img.jpeg" alt="A person smiling"> -->
+            <h1>Chamber Site Plan</h1>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Chamber</a>
+            <a href="#">Site Plan</a>
+            <a href="#">Survey</a>
+        </nav>
+        
     </header>
     <main>
-        <h1>Chamber Site Plan</h1>
+        <!-- <h1>Chamber Site Plan</h1> -->
         <section class="explanatin">
             <h2>Site Name</h2>
-            <p>Nuwakot Chamber of Commerce</p>
+            <p id = "chamber">Nuwakot Chamber of Commerce</p>
             <p>This site will be named after Nuwakot district of Nepal</p>
 
         </section>
@@ -45,18 +56,18 @@
         <section class="pointers">
             <h2>Color Scheme</h2>
             <ul class="colors">
-                <li>Background Color:-   #BCA88E (Nude)</li>
-                <li>Primary Color:-  #E3E8E9 (Misty Blue)</li>
-                <li>Typeface Color:-  #9DA993 (Sage Green)</li>
-                <li>Additional Color:-  #E4B4B4  (Rose Water)</li>
+                <li class = "nude">Background Color:-   #BCA88E (Nude)</li>
+                <li class = "misty">Primary Color:-  #E3E8E9 (Misty Blue)</li>
+                <li class = "green">Typeface Color:-  #9DA993 (Sage Green)</li>
+                <li class = "rose">Additional Color:-  #E4B4B4  (Rose Water)</li>
             </ul>
         </section>
         <section class="pointers">
             <h2>Typography</h2>
             <ul class="fonts">
-                <li>Title Font: Kalam, cursive</li>
-                <li>Content Font: IBM Plex Mono</li>
-                <li>Link font: Promt, Sans</li>
+                <li class = "title">Title Font: Kalam, cursive</li>
+                <li class = "content">Content Font: IBM Plex Mono</li>
+                <li class = "link">Link font: Promt, Sans</li>
             </ul>
         </section>
         <section class="pointers">
@@ -65,6 +76,11 @@
             <img src="images/lowerpart.png" alt="boxes for website layout" class = "wireframe">
         </section>
     </main>
+    <footer>
+        <p>&copy;<span id="year"></span>  Prashant Lamichhane   Nepal🇳🇵</p>
+        <p id="last-modified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
 </body>
 
 </html>
