@@ -17,6 +17,15 @@
 body {
     margin: 20%;
 } */
+#menu::before{
+    display: none;
+}
+#menu{
+    display: none;
+}
+nav a{
+    display: block;
+}
 
 header{
     width: 100%;
