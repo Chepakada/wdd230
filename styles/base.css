@@ -54,7 +54,7 @@ nav {
     /* padding: 10px; */
     background-color: var(--primary-color);
     opacity: 0.6;
-    
+     
 }
 
 nav a {
@@ -62,8 +62,32 @@ nav a {
     text-decoration: none;
     background-color: var(--primary-color);
     padding: 10px;
+    display: none;
+    
 
 }
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color:var(--primary-color);
+	color:var(--link-color);
+}
+
+.open  a {
+	display: block;
+}
+
 nav a:hover{
     background-color: var(--secondary-color);
 }
