@@ -161,3 +161,6 @@ footer p{
 footer span{
     background-color:var(--primary-color);
 }
+.mode{
+    width : 20%;
+}

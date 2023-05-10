@@ -41,3 +41,40 @@ hamButton.addEventListener('click', () => {
 	hamButton.classList.toggle('open');
     navigation.setAttribute("display", "show")
 });
+
+const sheet = document.styleSheets[0]
+const body = document.querySelector("body");
+const mode = document.querySelector("#mode");
+const main = document.querySelector("main");
+const h2 = document.querySelector("h2")
+
+mode.addEventListener("mouseenter", ()=>{
+	mode.textContent += "  Darkmode"
+})
+mode.addEventListener("mouseleave", ()=>{
+	mode.textContent = "✺";
+})
+
+mode.addEventListener("click", ()=>{
+	if (mode.textContent.includes("✺")){
+		
+		body.style.color = "white";
+		mode.textContent = "⎋";
+		sheet.cssRules[1].style.backgroundColor = 'black';
+		body.style.backgroundColor = "black";
+		main.style.backgroundColor = "black";
+		h2.style.backgroundColor = "black";
+		mode.style.backgroundColor = "black"
+		
+	}
+	else{
+		body.style.backgroundColor = "aliceblue";
+		body.style.color = "#2A0750";
+		mode.textContent = "✺"
+		sheet.cssRules[1].style.backgroundColor = 'aliceBlue';
+		main.style.backgroundColor = "aliceBlue";
+		h2.style.backgroundColor = "aliceBlue";
+		mode.style.backgroundColor = "aliceBlue"
+	}
+	
+})
