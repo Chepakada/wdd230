@@ -101,7 +101,7 @@
         
     }
     .hero-image{
-        max-width: 90%;
+        width: 90%;
         text-align: center;
         box-shadow:5px 5px 5px var(--primary-color);
     }
@@ -130,6 +130,11 @@
 
     .card-box{
         max-width: 32rem;
+        transition: transform 0.3s;
+    }
+    
+    .card-box:hover{
+        transform: scale(1.1)
     }
 
 

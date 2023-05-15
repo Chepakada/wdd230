@@ -120,6 +120,9 @@ img{
     justify-content: center;
     margin: 2em;
 }
+
+
+
 footer{
     background-color: var(--primary-color);
     justify-content: space-around;
