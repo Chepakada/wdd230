@@ -92,7 +92,6 @@ img{
 
 .hero-class{
     display: grid;
-    grid-template-rows: 3fr 2fr;
     width: 100%;
     align-items: center;
     
@@ -100,13 +99,18 @@ img{
 .hero-content{
     text-align: center;
     display: grid;
-    grid-template-rows: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .services{
     text-decoration: none;
     padding: 0.5em;
     background-color: var(--primary-color);
+    transition: transform 0.3s;
+}
+
+.services:hover{
+    transform: scale(1.1);
 }
 
 .card-box{
