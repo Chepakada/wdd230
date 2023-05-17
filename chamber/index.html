@@ -22,9 +22,11 @@
 
 <body>
     <header>
+        
         <div id="name">
             <h1>Nuwakot Chamber of Commerce</h1>
         </div>
+        <div id = "hamburger"></div>
         <nav>
             <div><a href="">Home</div></a>
             <div><a href="">Services</div></a>
@@ -47,23 +49,43 @@
                 </div>
             </div>
         </section>
+        <section class="weathers">
+        <div class = "card-box">
+            <img src="images/weather.jpg" alt="raining">
+            <div><h3>Weather</h3>
+                <h4>Today</h4>
+            <p>
+                Raining  <br>  4'C
+            </p></div>
+        </div>
+        <div class = "card-box">
+                <img src="images/weather.jpg" alt="raining">
+                <div><h3>Weather</h3>
+                    <h4>Tommorow</h4>
+                <p>
+                    Raining  <br>  4'C
+                </p></div>
+            </div>
+            </section>
+
         <section class="cards">
+            
             <div class="card-box">
-                <img src="images/food.jpeg" alt="" class="card">
+                <img src="images/food.jpeg" alt="food" class="card">
                 <h3>Food</h3>
             </div>
             <div class="card-box">
-                <img src="images/hospitality.jpeg" alt="" class="card">
+                <img src="images/hospitality.jpeg" alt="hotel" class="card">
                 <h3>Hospitality</h3>
             </div>
             <div class="card-box">
-                <img src="images/recreation.jpeg" alt="" class="card">
+                <img src="images/recreation.jpeg" alt="hills" class="card">
                 <h3>Recreation</h3>
             </div>
         </section>
         <section class="message-box">
             <h2>Featured business of the Month</h2>
-            <div class="business">
+            <div  id = "business">
 
             </div>
         </section>
@@ -75,6 +97,7 @@
     </footer>
     <script src="scripts/getDates.js" ></script>
     <script src="scripts/slideshow.js" async></script>
+    <script src = "scripts/featured.js"></script>
 </body>
 
 </html>

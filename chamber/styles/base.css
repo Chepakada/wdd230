@@ -95,6 +95,7 @@ img{
     width: 100%;
     align-items: center;
     
+    
 }
 .hero-content{
     text-align: center;
@@ -123,6 +124,14 @@ img{
     align-items: center;
     justify-content: center;
     margin: 2em;
+}
+
+#business{
+    background-color: var(--typeface-color1);
+    max-height: 32em;
+    display: flex;
+    overflow: scroll;
+    flex-direction: column;
 }
 
 
