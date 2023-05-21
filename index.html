@@ -42,6 +42,12 @@
         </nav>
 
     </header>
+    <div class="hero">
+        <picture>
+            <source srcset = "images/temple_base.webp" media = "(max-width: 768px)"></source>
+            <img src = "images/temple_larger.webp" alt = "temple image" width = 960 height=720  loading = "lazyload">
+        </picture>
+    </div>
     <main>
         <h2>WDD 230: Web Frontend Development</h2>
 
@@ -63,7 +69,11 @@
             <div id="number-of-visits">Number of visits to the website: 3*10^8</div>
 
         </section>
+       
     </main>
+    <section class = "cards" id = "map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56516.2777685522!2d85.28493307461508!3d27.70903024171175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198a307baabf%3A0xb5137c1bf18db1ea!2sKathmandu%2044600%2C%20Nepal!5e0!3m2!1sen!2sus!4v1684710718838!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" loading = "lazy"></iframe>
+    </section>
     <footer>
         <p>&copy;<span id="year"></span> Prashant Lamichhane Nepal🇳🇵</p>
         <p id="last-modified"></p>

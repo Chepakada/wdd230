@@ -164,3 +164,14 @@ footer span{
 .mode{
     width : 20%;
 }
+
+.hero, .cards {
+    display: flex;
+    justify-content: center;
+}
+.hero img {
+    
+    width: 100%;
+    height: auto;
+    
+}
