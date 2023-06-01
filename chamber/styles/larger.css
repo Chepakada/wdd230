@@ -3,34 +3,35 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=Kalam:wght@300&family=Prompt&display=swap');
 
 @media (min-width: 768px) {
-    :root{
-        --primary-color : #BCA88E;
-        --background-color :  #E3E8E9;
-        --typeface-color1 : #9DA993;
+    :root {
+        --primary-color: #BCA88E;
+        --background-color: #E3E8E9;
+        --typeface-color1: #9DA993;
         --additional-color: #E4B4B4;
         --typeface-color2: #000000;
         --main-background-color: aliceblue;
     }
-    
-    *{
+
+    * {
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         background-color: var(--main-background-color);
         color: var(--typeface-color2);
     }
-    
+
     body {
-        margin: 5% ;
-    
+        margin: 5%;
+
     }
-    header{ 
+
+    header {
         margin-top: -3em;
     }
 
-    #name{
-        justify-content:space-evenly;
-        
+    #name {
+        justify-content: space-evenly;
+
         display: flex;
-        
+
         background-color: var(--primary-color);
         /* padding: 10px; */
         align-items: center;
@@ -38,11 +39,12 @@
     }
 
 
-    #name h1{
-        
+    #name h1 {
+
         background-color: var(--main-background-color-color);
         text-align: center;
     }
+
     nav {
         display: flex;
         flex-direction: row;
@@ -54,105 +56,134 @@
         flex-wrap: wrap;
         justify-content: space-around;
     }
-    nav div{
+
+    nav div {
         color: var(--typeface-color2);
         text-decoration: none;
         background-color: var(--background-color);
         padding: 10px;
-        
+
     }
-    nav div a{
+
+    nav div a {
         display: block;
-        
+
     }
-    
-    nav div:hover{
+
+    nav div:hover {
         background-color: var(--typeface-color1);
         opacity: 1;
     }
 
 
-    h1{
-        font-family:"Kalam", cursive;
+    h1 {
+        font-family: "Kalam", cursive;
     }
 
-    p, li{
+    p,
+    li {
         font-family: "IBM Plex Mono";
     }
 
     a {
-        font-family: "Prompt" Sans;
+        font-family: "Prompt"Sans;
         text-decoration: none;
     }
-    .hero-class{
+
+    .hero-class {
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 100%;
         align-items: center;
-        gap:1em;
+        gap: 1em;
         margin-bottom: 5em;
         height: 32em;
     }
 
-    .hero-img-holder{
+    .hero-img-holder {
         grid-column: 1/2;
-        
+
         align-items: center;
         height: 90%;
-        
+
     }
-    .hero-image{
+
+    .hero-image {
         /* width: 90%; */
         text-align: center;
-        box-shadow:5px 5px 5px var(--primary-color);
+        box-shadow: 5px 5px 5px var(--primary-color);
     }
-    .hero-content{
+
+    .hero-content {
         grid-column: 2/3;
         text-align: center;
         display: grid;
         grid-template-rows: 1fr 1fr;
         align-self: flex-start;
-        
-    }
 
-    .services{
+    }
+    
+
+    .services, .main-cards, .side-card  {
         text-decoration: none;
         padding: 0.5em;
         background-color: var(--primary-color);
     }
 
-    .cards{
+    .services:hover, .side-card:hover{
+        transform: scale(1.1);
+    }
+
+    .cards {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 4fr 1fr;
-        gap: 2em
+        gap: 2em;
     }
 
     .card-box{
         max-width: 32rem;
         transition: transform 0.3s;
+        text-align: center;
     }
-    
-    .card-box:hover{
+    .main-cards{
+        max-width: 32rem;
+        transition: transform 0.3s;
+        text-align: center;
+        margin-left: 10%;
+    }
+
+    .card-box:hover, .main-cards:hover {
         transform: scale(1.1)
     }
 
-    #business{
+
+    #business {
         flex-direction: row;
         flex-wrap: nowrap;
-        overflow-x:auto;
+        overflow-x: auto;
 
     }
-    #business > * {
+
+    #business>* {
         flex: 0 0 32em;
-        margin-right: 10px; 
-      }
-      .weathers{
+        margin-right: 10px;
+    }
+
+    .weathers {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-      }
+    }
+
+    .discover {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap:2em;
+        
+    }
+
+
 
 
 }
-

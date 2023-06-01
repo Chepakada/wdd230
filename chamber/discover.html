@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property = "og:title" content = "Nuwakot Chamber of Commerce unofficial website">
+    <meta property = "og:url" content = "https://chepakada.github.io/wdd230/chamber/">
+    <meta property = "og:discription" content="This is the un-official website for Nuwakot Chamberer of Commerce">
+    <meta property = "og:image" content="https://chepakada.github.io/wdd230/chamber/images/slideshow/hero.jpeg">
+    <meta property = "fb:app_id" content="3517290288526630">
+
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+
+    <title>Nuwakot Chamber of Commerce</title>
+</head>
+
+<body>
+    <header>
+        
+        <div id="name">
+            <h1>Nuwakot Chamber of Commerce</h1>
+        </div>
+        <div id = "hamburger"></div>
+        <nav>
+            <div><a href="">Home</div></a>
+            <div><a href="">Services</div></a>
+            <div><a href="">Site Plan</div></a>
+            <div><a href="">Survey</div></a>
+        </nav>
+    </header>
+    <main class = "discover">
+        <section id="side-bar">
+            <div class="side-card"><h2>Number of times you visited</h2><span id="timesVisited"></span></div>
+            <div class="side-card"><h2>Location</h2><p>This place is somewhere out of nowhere.</p>
+                
+            </div>
+            <div class="side-card"><h2>The History</h2><p>Something I don't care enough to look into and then put it here. Sorry about that.</p></div>
+            <div class="side-card"><h2>Future Events</h2><p>There are no events, it sad, isn't it</p></div>
+            <div class="side-card"><h2>Things to do</h2><p>There isn't a lot to do here. Just breathe, air is nice.</p></div>
+            <div class="side-card"><h2>Current Leadership</h2><p>I am the authority here.</p></div>
+            <div class="side-card"><h2>People</h2><p>People suck</p></div>
+        </section>
+        <section class="main-view">
+            <img src="images/food.jpeg" alt="food" class="main-cards" loading="lazy">
+            <img src="images/hospitality.jpeg" alt="a hotel" class="main-cards" loading="lazy">
+            <img src="images/recreation.jpeg" alt="a park" class="main-cards" loading="lazy">
+            <img src="images/weather.jpg" alt="raining" class="main-cards" loading="lazy">
+            <img src="images/slideshow/slide3.jpeg" alt="landscape" class="main-cards" loading="lazy">
+            <img src="images/slideshow/hero.jpeg" alt="landscape" class="main-cards" loading="lazy">
+        </section>
+    </main>
+   
+    <footer>
+        <p>&copy;<span id="year"></span> Prashant Lamichhane Nepal🇳🇵</p>
+        <p id="last-modified"></p>
+
+    </footer>
+    <script src = "scripts/getDates.js"></script>
+    <script src = "scripts/lastVisit.js"></script>
+</body>
+
+</html>
