@@ -1,4 +1,5 @@
 const select = document.getElementById("membership");
+
 const options = ["NP Membership (No fees for non-profit organizations",
                     "Bronze Membership",
                      "Silver Membership",
