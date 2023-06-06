@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Nuwakot Chamber of Commerce unofficial website's join in page">
+    <meta property="og:url" content="https://chepakada.github.io/wdd230/chamber/">
+    <meta property="og:discription"
+        content="This is the un-official website for Nuwakot Chamberer of Commerce's Join in page">
+    <meta property="og:image" content="https://chepakada.github.io/wdd230/chamber/images/slideshow/hero.jpeg">
+    <meta property="fb:app_id" content="3517290288526630">
+
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+
+    <title>Join Us - Form</title>
+</head>
+
+<body>
+    <header>
+
+        <div id="name">
+            <h1>Nuwakot Chamber of Commerce</h1>
+        </div>
+        <div id="hamburger"></div>
+        <nav>
+            <div><a href="">Home</div></a>
+            <div><a href="">Services</div></a>
+            <div><a href="">Site Plan</div></a>
+            <div><a href="discover.html">Discover</div></a>
+        </nav>
+    </header>
+
+    <main id="join">
+        <form action="" method="GET">
+            <h1>Join Us</h1>
+            <div>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div>
+                        <label for="firstName">First Name: </label>
+                        <input type="text" name="firstName" id="firstName" placeholder="John">
+                    </div>
+                    <div>
+                        <label for="lastName">Last Name: </label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Doe">
+                    </div>
+                    <div><label for="position">Position: </label>
+                        <input type="text" name="position" id="position" placeholder="clerk"></div>
+                    <div><label for="emailAddress">EmailID: </label>
+                        <input type="email" name="emailAddress" id="emailAddress" placeholder="johndoe@email.com"></div>
+                    <div><label for="phoneNo">Phone No.:</label>
+                        <input type="tel" name="phoneNo" id="phoneNo" placeholder="##########"></div>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <div><label for="organization">Organization's Name:</label>
+                    <input type="text" name="organization" id="organization" placeholder="Doe Holdings"></div>
+                    <div><label for="membership">Select Your Membership Level: </label>
+                    <select name="membership" id="membership">
+                        <!-- Gonna add with javascript -->
+                    </select>
+                </div>
+                    <div><label for="description">Description: </label>
+                    <textarea  name="description" id="description" >Your Organization's brief introduction </textarea></div>
+                        <div>
+                            <input type="hidden" name="timeStamp" id = "timeStamp">
+                        </div>
+                </fieldset>
+                <div id = "button-box">
+                <button type = "submit">Join Us</button></div>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="year"></span> Prashant Lamichhane Nepal🇳🇵</p>
+        <p id="last-modified"></p>
+
+    </footer>
+    <script src = "./scripts/join.js"></script>
+</body>
