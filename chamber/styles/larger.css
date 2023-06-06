@@ -183,6 +183,15 @@
         
     }
 
+    #join{
+        margin:2% 20%;
+    }
+    fieldset div{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+   
+  
 
 
 

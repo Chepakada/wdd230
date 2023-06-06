@@ -154,7 +154,7 @@ img{
 }
 
 #join{
-    margin:5%;
+    margin: auto;
     border:1px solid var(--primary-color);
 }
 #join form h1{
@@ -178,17 +178,19 @@ input, option{
     
 }
 
+
 fieldset, fieldset div{
     margin:1em;
 }
-fieldset div{
-   
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+fieldset div input, fieldset div textarea{
+    display: flex;
+    flex-direction: column;
 }
+
 fieldset, button{
     box-shadow: inset -1px -1px 10px 5px var(--primary-color);
 }
+
 
 legend{
     text-align: center;
@@ -197,6 +199,7 @@ legend{
 }
 textarea{
     height: 15em;
+    max-width: 90%;
     background-color: var(--background-color);
 }
 #button-box{
@@ -212,6 +215,12 @@ button{
     background-color: var(--additional-color);
     font-size: 2em;
     font-weight: 700;
+}
+#hidden{
+    display: none;
+}
+select{
+    max-width: 60%;
 }
 
 
