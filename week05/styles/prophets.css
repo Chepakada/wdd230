@@ -1,0 +1,13 @@
+#cards{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 1em;
+}
+.card{
+    background-color:rgb(221, 133, 221);
+    border:1px solid white;
+    
+    
+}

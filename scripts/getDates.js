@@ -4,35 +4,23 @@ document.getElementById("year").innerText =  date.getFullYear()
 const nlastModified = document.lastModified
 
 document.getElementById("last-modified").innerHTML = `Last Modified : ${nlastModified}`
-// const ipaddress =() =>
-// {
-//     let ipAddress;
-//     fetch('http://api.ipify.org/')
-//     .then(response => response.json())
-//     .then(data => {
-//     ipAddress = data.ip;
-//     console.log(ipAddress)
-    
-//     })
-//     .catch(error => {
-//     console.error(error);
-    
-//     });
-//     return ipAddress
-// }
+
+const apiKey = "5c14931591f183c1bf0308ecc66e16c6";
 
 
-// let url = `http://dataservice.accuweather.com/locations/v1/cities/${ipaddress()}`
+// let url = `https://api.openweathermap.org/data/3.0/onecall?lat=27.9288&lon=84.4096&exclude={daily,hourly}&appid=${apiKey}`;
 
 // async function getWeater(url){
-//     let response =await fetch(url, {mode:"no-cors"});
+//     let response =await fetch(url);
 //     if (response.ok){
-//         console.log(response.json())
+//         console.log(await response.json())
 //     }
+// 	else{console.log("error")}
 
 // }
 
 // getWeater(url)
+
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
