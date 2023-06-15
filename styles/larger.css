@@ -133,6 +133,11 @@ main #weather-box{
     background-color: var(--link-color);
 }
 
+.hero{
+    margin:5% 20%;
+    text-align: center;
+}
+
 footer{
     background-color: var(--primary-color);
     justify-content: space-around;

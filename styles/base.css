@@ -56,6 +56,9 @@ nav {
     opacity: 0.6;
      
 }
+a{
+    background-color: none;
+}
 
 nav a {
     color:var(--link-color);
@@ -177,7 +180,7 @@ footer span{
 .hero picture{
     grid-row:1/3;
     grid-column: 1/5;
-   
+    width: 100%;
     height: auto;
     
 }
@@ -191,6 +194,7 @@ picture img{
     display: grid;
     grid-template-columns: 1fr 1fr 2fr 1fr;
     grid-template-rows: 1fr 3fr;
+    align-items: center;
 
 }
 
