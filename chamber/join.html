@@ -37,21 +37,24 @@
     </header>
 
     <main id="join">
-        <form action="" method="GET">
+        <div id="membershipInfo">
+            <!-- Gonna add with Javascript -->
+        </div>
+        <form action="thankyou.html" method="GET">
             <h1>Join Us</h1>
             <div>
                 <fieldset>
                     <legend>Personal Information</legend>
                     <div>
                         <label for="firstName">First Name: </label>
-                        <input type="text" name="firstName" id="firstName" placeholder="John" autofocus>
+                        <input type="text" name="firstName" id="firstName" placeholder="John" autofocus required>
                     </div>
                     <div>
                         <label for="lastName">Last Name: </label>
-                        <input type="text" name="lastName" id="lastName" placeholder="Doe">
+                        <input type="text" name="lastName" id="lastName" placeholder="Doe" required>
                     </div>
                     <div><label for="position">Position: </label>
-                        <input type="text" name="position" id="position" placeholder="clerk"></div>
+                        <input type="text" name="position" id="position" placeholder="clerk" pattern="[A-Za-z\s-]{7,}"></div>
                     <div><label for="emailAddress">EmailID: </label>
                         <input type="email" name="emailAddress" id="emailAddress" placeholder="johndoe@email.com"></div>
                     <div><label for="phoneNo">Phone No.:</label>
@@ -60,8 +63,8 @@
                 <fieldset>
                     <legend>Additional Information</legend>
                     <div><label for="organization">Organization's Name:</label>
-                    <input type="text" name="organization" id="organization" placeholder="Doe Holdings"></div>
-                    <div><label for="membership">Select Your Membership Level: </label>
+                    <input type="text" name="organization" id="organization" placeholder="Doe Holdings" required></div>
+                    <div><label for="membership">Select Your Membership Level: </label><br>
                     <select name="membership" id="membership">
                         <!-- Gonna add with javascript -->
                     </select>
@@ -85,3 +88,4 @@
     </footer>
     <script src = "./scripts/join.js"></script>
 </body>
+</html>

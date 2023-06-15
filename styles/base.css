@@ -144,6 +144,11 @@ main #weather-box{
     background-color: var(--link-color);
 }
 
+#form{
+    display: block;
+    margin:5em;
+}
+
 
 
 footer{

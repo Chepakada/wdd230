@@ -158,6 +158,8 @@
     }
 
 
+
+
     #business {
         flex-direction: row;
         flex-wrap: nowrap;
@@ -184,11 +186,14 @@
     }
 
     #join{
-        margin:2% 20%;
+        margin:2% 15%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
     fieldset div{
         display: grid;
         grid-template-columns: 1fr 2fr;
+        margin:1em 2%;
     }
    
   
