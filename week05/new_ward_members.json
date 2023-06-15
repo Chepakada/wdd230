@@ -1,0 +1,34 @@
+{
+    "familyName": "Tan",
+    "moveInDate": "2022-05-15",
+    "numberOfPeople": 5,
+    "visitedByBishopric": true,
+    "familyMembers": [
+      {
+        "name": "Muhammad Tan",
+        "gender": "Male",
+        "birthdate": "1980-07-10"
+      },
+      {
+        "name": "Siti Tan",
+        "gender": "Female",
+        "birthdate": "1982-11-22"
+      },
+      {
+        "name": "Aishah Tan",
+        "gender": "Female",
+        "birthdate": "2005-09-01"
+      },
+      {
+        "name": "Ahmad Tan",
+        "gender": "Male",
+        "birthdate": "2010-03-18"
+      },
+      {
+        "name": "Nur Tan",
+        "gender": "Female",
+        "birthdate": "2014-08-07"
+      }
+    ]
+  }
+  
