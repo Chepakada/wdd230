@@ -5,21 +5,47 @@ const nlastModified = document.lastModified
 
 document.getElementById("last-modified").innerHTML = `Last Modified : ${nlastModified}`
 
+const currentTemp =document.querySelector("#current-temp");
+const weatherIcon=document.querySelector("#weather-icon");
+const captionDesc=document.querySelector("figcaption");
+
 const apiKey = "5c14931591f183c1bf0308ecc66e16c6";
+
 
 
 // let url = `https://api.openweathermap.org/data/3.0/onecall?lat=27.9288&lon=84.4096&exclude={daily,hourly}&appid=${apiKey}`;
 
-// async function getWeater(url){
-//     let response =await fetch(url);
-//     if (response.ok){
-//         console.log(await response.json())
-//     }
-// 	else{console.log("error")}
 
-// }
+async function apiFetch(url){
+    try{
+        const response = await fetch(url);
+        if (response.ok){
+            const data = await response.json();
+            console.log(data)
+            displayResults(data)
+        }
+        else{
+            throw(Error(await response.text()))
+        }
+    }
+    catch (error){
+        console.log(error);
+    }
+}
 
-// getWeater(url)
+apiFetch(url);
+
+function displayResults(data){
+    currentTemp.innerHTML= `${data.current.temp}`
+    const iconCode = data.current.weather[0].icon
+    const desc = data.current.weather[0].main
+    const iconSrc = `https://openweathermap.org/img/w/${iconCode}.png`
+
+    document.getElementById("weather-icon").setAttribute("src", iconSrc);
+    document.getElementById("weather-icon").setAttribute("alt", desc)
+    document.querySelector("figcaption").textContent = desc
+
+}
 
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
@@ -46,8 +72,9 @@ mode.addEventListener("mouseleave", ()=>{
 mode.addEventListener("click", ()=>{
 	if (mode.textContent.includes("✺")){
 		
-		body.style.color = "white";
+		body.style.color = "black";
 		mode.textContent = "⎋";
+		mode.style.color="white"
 		sheet.cssRules[1].style.backgroundColor = 'black';
 		body.style.backgroundColor = "black";
 		main.style.backgroundColor = "black";
@@ -56,6 +83,7 @@ mode.addEventListener("click", ()=>{
 		
 	}
 	else{
+		mode.style.color="black"
 		body.style.backgroundColor = "aliceblue";
 		body.style.color = "#2A0750";
 		mode.textContent = "✺"
