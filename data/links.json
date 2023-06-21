@@ -1,0 +1,67 @@
+{
+    "weeks": [{
+            "week": "Week 2",
+
+            "links": [{
+                    "url": "https://codepen.io/Chepakada/pen/KKGoBag",
+                    "title": "pseudo class"
+                },
+                {
+                    "url": "week4/bom.html",
+                    "title": "DOM manipulation"
+                },
+                {
+                    "url": "./lesson4/form.html",
+                    "title": "Form"
+                },
+                {
+                    "url": "week4/tablebuild.html",
+                    "title": "Table Build"
+                }
+            ]
+        },
+        {
+            "week": "Week 3",
+        
+            "links": [{
+                    "url": "week5/output.webp",
+                    "title": "Optimized Image(WebP)"
+                },
+                {
+                    "url": "week5/lazyload.html",
+                    "title": "Lazy Loading"
+                },
+                {
+                    "url": "week5/responsive-images.html",
+                    "title": "Responsive Image"
+                },
+                {
+                    "url": "week4/bom.html",
+                    "title": "Web Storage API"
+                }
+            ]
+        },
+        {
+            "week": "Week 4",
+
+            "links": [{
+                    "url": "https://codepen.io/Chepakada/pen/gOQPZPa",
+                    "title": "Pseudo Elements"
+                },
+                {
+                    "url": "./week05/new_ward_members.json",
+                    "title": "JSON file"
+                },
+                {
+                    "url": "./week05/prophets.html",
+                    "title": "The Fetch API"
+                },
+                {
+                    "url": "./week05/weather.html",
+                    "title": "Weather API"
+                }
+
+            ]
+        }
+    ]
+}
