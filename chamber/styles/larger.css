@@ -147,10 +147,21 @@
         text-align: center;
     }
     .main-cards{
-        max-width: 32rem;
+        
         transition: transform 0.3s;
         text-align: center;
         margin-left: 10%;
+    }
+    .main-view{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2em;
+        margin:2em 2em;
+    }
+
+    .main-cards{
+        max-width: 80%;
+        max-height: 80%;
     }
 
     .card-box:hover, .main-cards:hover {
