@@ -5,7 +5,7 @@ const captionDesc=document.querySelector("figcaption");
 
 const apiKey = "5c14931591f183c1bf0308ecc66e16c6";
 
-// url = `https://api.openweathermap.org/data/3.0/onecall?lat=49.75&lon=6.64&units=imperial&exclude={daily,hourly}&appid=${apiKey}`;
+url = `https://api.openweathermap.org/data/3.0/onecall?lat=49.75&lon=6.64&units=imperial&exclude={daily,hourly}&appid=${apiKey}`;
 
 
 async function apiFetch(url){
