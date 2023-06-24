@@ -208,6 +208,19 @@
     }
    
   
+    #memberCard{
+        width:30em;
+
+    }
+
+    #memberCard:hover{
+        width:30em;
+        transform: scale(1.1, 1.1);
+    }
+    #memberCard img{
+        max-width: fit-content;
+    }
+    
 
 
 
