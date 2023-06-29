@@ -1,5 +1,5 @@
 function dataRetriever(){
-fetch("./data/links.json")
+fetch("https://github.com/Chepakada/wdd230/blob/main/data/links.json")
     .then(response =>response.json())
     .then(data=>{
         console.log(data);
