@@ -1,5 +1,5 @@
 function dataRetriever(){
-fetch("../data/links.json")
+fetch("./data/links.json")
     .then(response =>response.json())
     .then(data=>{
         console.log(data);
