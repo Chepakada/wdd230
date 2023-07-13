@@ -135,7 +135,7 @@ img{
     background-color: var(--primary-color);
 }
 
-.card-box{
+.card-box, #banner{
     display: grid;
     padding: 0.2em;
     grid-template-rows: 3fr 1fr;
@@ -147,12 +147,20 @@ img{
     margin: 2em;
 }
 
-#business{
+#business, #chamberWeathers{
     background-color: var(--typeface-color1);
     max-height: 32em;
     display: flex;
     overflow: scroll;
     flex-direction: column;
+}
+
+#chamberWeathers #card-box{
+    max-height: fit-content;
+    max-width: fit-content;
+}
+#chamberWeathers{
+    flex-direction: row;
 }
 
 #join{
@@ -228,6 +236,7 @@ select{
     
 }
 
+
 #membershipInfo{
     border:1px solid var(--primary-color);
     display: flex;
@@ -298,3 +307,4 @@ footer span{
     text-align: center;
     margin: 20em;
 }
+

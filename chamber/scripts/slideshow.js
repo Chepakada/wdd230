@@ -1,4 +1,4 @@
-const slides = ["hero.jpeg", "slide2.jpeg", "slide3.jpeg", "slide4.jpeg", "slide5.jpeg"];
+const slides = ["slide2.webp", "hero.webp", "slide3.webp", "slide4.webp", "slide5.webp"];
 
 var xForSlide = () => {
     const time = new Date().getSeconds();
@@ -15,5 +15,5 @@ function slideshow(slides){
 
 setInterval(function() {
     slideshow(slides);
-}, 2000);
+}, 3000);
 

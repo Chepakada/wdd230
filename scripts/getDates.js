@@ -13,7 +13,7 @@ const apiKey = "5c14931591f183c1bf0308ecc66e16c6";
 
 
 
-let url = `https://api.openweathermap.org/data/3.0/onecall?lat=27.9288&lon=84.4096&exclude={daily,hourly}&appid=${apiKey}`;
+let url = `https://api.openweathermap.org/data/3.0/onecall?lat=27.9288&lon=84.4096&units=metric&exclude={daily,hourly}&appid=${apiKey}`;
 
 
 async function apiFetch(url){
@@ -36,7 +36,7 @@ async function apiFetch(url){
 apiFetch(url);
 
 function displayResults(data){
-    currentTemp.innerHTML= `${data.current.temp}`
+    currentTemp.innerHTML= `${data.current.temp} 'C`
     const iconCode = data.current.weather[0].icon
     const desc = data.current.weather[0].main
     const iconSrc = `https://openweathermap.org/img/w/${iconCode}.png`

@@ -36,10 +36,13 @@
         </nav>
     </header>
     <main>
+        <div id = "banner">
+            <div id = "cross">❌</div>
+        </div>
         <section id="hero">
             <div class="hero-class">
                 <div class="hero-img-holder">
-                    <img src="./images/slideshow/hero.jpeg" alt="image of a landscape" class="hero-image">
+                    <img src="./images/slideshow/slide2.webp" alt="image of a landscape" class="hero-image">
                 </div>
                 <div class="hero-content">
                     <p class="content">
@@ -50,41 +53,39 @@
                 </div>
             </div>
         </section>
-        <section class="weathers">
-        <div class = "card-box">
-            <img src="images/weather.jpg" alt="raining">
-            <div><h3>Weather</h3>
-                <h4>Today</h4>
-            <p>
-                Raining  <br>  4'C
-            </p></div>
-        </div>
-        <div class = "card-box">
-                <img src="images/weather.jpg" alt="raining">
-                <div><h3>Weather</h3>
-                    <h4>Tommorow</h4>
-                <p>
-                    Raining  <br>  4'C
-                </p></div>
-            </div>
+        <div>
+            <h2>Weather Forecast</h2>
+        <section class="weathers" id = "chamberWeathers">
+        
             </section>
+            </div>
+
 
         <section class="cards">
             
             <div class="card-box">
-                <img src="images/food.jpeg" alt="food" class="card">
+                <picture>
+                <img src="images/food.webp" alt="food" class="card" width="400px" height = "400px" loading= "lazy">
+                </picture>
+
                 <h3>Food</h3>
             </div>
             <div class="card-box">
-                <img src="images/hospitality.jpeg" alt="hotel" class="card">
+                <picture>
+                <img src="images/hospitality.webp" alt="hotel" class="card" width="400px" height = "400px" loading= "lazy">
+                </picture>
+
                 <h3>Hospitality</h3>
             </div>
             <div class="card-box">
-                <img src="images/recreation.jpeg" alt="hills" class="card">
+                <picture>
+                <img src="images/recreation.webp" alt="hills" class="card" width="400px" height = "400px" loading= "lazy">
+            </picture>
                 <h3>Recreation</h3>
             </div>
         </section>
         <section class="message-box">
+            
             <h2>Featured business of the Month</h2>
             <div  id = "business">
 
@@ -100,6 +101,9 @@
     <script src="scripts/slideshow.js" async></script>
     <script src = "scripts/featured.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src = "scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
+    
 </body>
 
 </html>

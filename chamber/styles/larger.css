@@ -171,23 +171,19 @@
 
 
 
-    #business {
+    #business, #chamberWeathers {
         flex-direction: row;
         flex-wrap: nowrap;
         overflow-x: auto;
 
     }
 
-    #business>* {
+    #business>*, #chamberWeathers>*{
         flex: 0 0 32em;
         margin-right: 10px;
     }
 
-    .weathers {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
+  
 
     .discover {
         display: grid;
